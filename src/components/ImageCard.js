@@ -30,7 +30,8 @@ import React, { Component } from 'react'
                         }
     render() {
         return (
-            <div style={{gridRowEnd:`span ${this.state.span}`,textAlign:'center'}}>
+            <div style={{gridRowEnd:`span ${this.state.span}`,textAlign:'center', 
+            boxShadow: ' 0px 15px 10px -15px #111;  '}} className='cardBox'>
                 <img ref={this.imageRef} alt={this.props.image.description} src={this.props.image.urls.regular}></img>
             </div>
         )
